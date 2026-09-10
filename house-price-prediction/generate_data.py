@@ -37,7 +37,7 @@ gia_nha = (
     + np.random.normal(0, 300, N_SAMPLES)
     + 500
 )
-gia_nha = gia_nha.clip(300, None)  # giá không âm
+gia_nha = gia_nha.clip(300, None)  
 
 df = pd.DataFrame({
     "dien_tich": dien_tich.round(1),
