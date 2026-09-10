@@ -5,19 +5,19 @@ Dự án minh họa việc xây dựng mô hình **Hồi quy tuyến tính (Line
 
 **Nhánh 1: version 2**
 
-## Cấu trúc thư mục
+ Cấu trúc thư mục
 
 ```
 house-price-prediction/
 ├── data/
-│   └── house_prices.csv     # Dữ liệu giá nhà
-├── generate_data.py         # Script tạo dữ liệu (nếu cần tạo lại)
-├── linear_regression.py     # Script huấn luyện & đánh giá mô hình
-├── requirements.txt         # Thư viện cần cài
+│   └── house_prices.csv    
+├── generate_data.py         
+├── linear_regression.py     
+├── requirements.txt       
 └── README.md
 ```
 
-## Bộ dữ liệu (`data/house_prices.csv`)
+ Bộ dữ liệu (`data/house_prices.csv`)
 
 Gồm 500 mẫu với các cột:
 
@@ -30,13 +30,13 @@ Gồm 500 mẫu với các cột:
 | `khoang_cach_tt` | Khoảng cách đến trung tâm thành phố (km)    |
 | `gia_nha`        | Giá nhà (triệu VNĐ) — **biến mục tiêu**     |
 
-## Cài đặt
+ Cài đặt
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Chạy chương trình
+ Chạy chương trình
 
 ```bash
 # (tuỳ chọn) tạo lại dữ liệu
@@ -46,7 +46,7 @@ python generate_data.py
 python linear_regression.py
 ```
 
-## Kết quả
+ Kết quả
 
 Script `linear_regression.py` sẽ:
 
@@ -64,7 +64,7 @@ Kết quả tham khảo trên bộ dữ liệu mẫu:
 - **MAE ≈ 229 triệu VNĐ**
 - **RMSE ≈ 300 triệu VNĐ**
 
-## Ghi chú
+ Ghi chú
 
 - Bộ dữ liệu trong repo này là dữ liệu **giả lập (synthetic)**, được sinh ra
   bằng công thức tuyến tính có thêm nhiễu ngẫu nhiên, chỉ nhằm mục đích minh
